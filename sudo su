@@ -1,0 +1,19 @@
+[0;1;32m●[0m jenkins.service - Jenkins Continuous Integration Server
+     Loaded: loaded (/lib/systemd/system/jenkins.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sat 2022-12-17 02:58:35 UTC; 27s ago
+   Main PID: 6535 (java)
+      Tasks: 43 (limit: 1143)
+     Memory: 305.8M
+     CGroup: /system.slice/jenkins.service
+             └─6535 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+
+Dec 17 02:57:54 ip-172-31-1-24 jenkins[6535]: ab5e7f530a3f4cd4a4825cde314efc91
+Dec 17 02:57:54 ip-172-31-1-24 jenkins[6535]: This may also be found at: /var/lib/jenkins/secrets/initialAdminPassword
+Dec 17 02:57:54 ip-172-31-1-24 jenkins[6535]: *************************************************************
+Dec 17 02:57:54 ip-172-31-1-24 jenkins[6535]: *************************************************************
+Dec 17 02:57:54 ip-172-31-1-24 jenkins[6535]: *************************************************************
+Dec 17 02:58:35 ip-172-31-1-24 jenkins[6535]: 2022-12-17 02:58:35.664+0000 [id=44]        INFO        h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+Dec 17 02:58:35 ip-172-31-1-24 jenkins[6535]: 2022-12-17 02:58:35.666+0000 [id=44]        INFO        hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+Dec 17 02:58:35 ip-172-31-1-24 jenkins[6535]: 2022-12-17 02:58:35.864+0000 [id=29]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+Dec 17 02:58:35 ip-172-31-1-24 jenkins[6535]: 2022-12-17 02:58:35.885+0000 [id=22]        INFO        hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+Dec 17 02:58:35 ip-172-31-1-24 systemd[1]: Started Jenkins Continuous Integration Server.
